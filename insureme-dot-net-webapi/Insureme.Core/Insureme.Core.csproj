@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B71B0030-115A-4769-AB6E-0275D1CEAD5D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Insureme.Core</RootNamespace>
+    <AssemblyName>Insureme.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Templates.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Templates.resx</DependentUpon>
+    </Compile>
+    <Compile Include="v1\Entities\ClientEntity.cs" />
+    <Compile Include="v1\Entities\ConfigurationEntity.cs" />
+    <Compile Include="v1\Entities\Dipn\AppEntity.cs" />
+    <Compile Include="v1\Entities\Dipn\AppTypeEntity.cs" />
+    <Compile Include="v1\Entities\Dipn\DeviceEntity.cs" />
+    <Compile Include="v1\Entities\Dipn\DeviceTypeEntity.cs" />
+    <Compile Include="v1\Entities\Dipn\IPEntity.cs" />
+    <Compile Include="v1\Entities\FamilyTypeEntity.cs" />
+    <Compile Include="v1\Entities\IncomeRangeEntity.cs" />
+    <Compile Include="v1\Entities\InputTypeEntity.cs" />
+    <Compile Include="v1\Entities\KeyEntity.cs" />
+    <Compile Include="v1\Entities\LinkEntity.cs" />
+    <Compile Include="v1\Entities\LinkTypeEntity.cs" />
+    <Compile Include="v1\Entities\ListEntity.cs" />
+    <Compile Include="v1\Entities\ListItemEntity.cs" />
+    <Compile Include="v1\Entities\ProductEntity.cs" />
+    <Compile Include="v1\Entities\ProductTypeEntity.cs" />
+    <Compile Include="v1\Entities\PropertyEntity.cs" />
+    <Compile Include="v1\Entities\ValueEntity.cs" />
+    <Compile Include="v1\Entities\ValueTypeEntity.cs" />
+    <Compile Include="v1\Entities\ZoneEntity.cs" />
+    <Compile Include="v1\Entities\RequestLogEntity.cs" />
+    <Compile Include="v1\Entities\RoleEntity.cs" />
+    <Compile Include="v1\Entities\StateEntity.cs" />
+    <Compile Include="v1\Entities\TokenEntity.cs" />
+    <Compile Include="v1\Entities\UserEntityTrimmed.cs" />
+    <Compile Include="v1\Entities\UserEntity.cs" />
+    <Compile Include="v1\Entities\GroupEntity.cs" />
+    <Compile Include="v1\Helpers\Common.cs" />
+    <Compile Include="v1\Helpers\Cryptography.cs" />
+    <Compile Include="v1\Helpers\Extensions.cs" />
+    <Compile Include="v1\Helpers\RandomString.cs" />
+    <Compile Include="v1\Objects\Exceptions\GeneralException.cs" />
+    <Compile Include="v1\Objects\Requests\Dipn\LinkRequest.cs" />
+    <Compile Include="v1\Objects\Requests\Dipn\RegisterDeviceRequest.cs" />
+    <Compile Include="v1\Objects\Requests\Dipn\RegisterAppRequest.cs" />
+    <Compile Include="v1\Objects\Responses\AllUsersResponse.cs" />
+    <Compile Include="v1\Objects\Responses\AuthorizationFailResponse.cs" />
+    <Compile Include="v1\Objects\Requests\EmailRequest.cs" />
+    <Compile Include="v1\Objects\Responses\Common\Error.cs" />
+    <Compile Include="v1\Objects\Responses\EmailResponse.cs" />
+    <Compile Include="v1\Objects\Responses\FamilyTypesResponse.cs" />
+    <Compile Include="v1\Objects\Requests\LoginUserRequest.cs" />
+    <Compile Include="v1\Objects\Responses\KeyValidationResponse.cs" />
+    <Compile Include="v1\Objects\Responses\LoginUserResponse.cs" />
+    <Compile Include="v1\Objects\Requests\RegisterUserRequest.cs" />
+    <Compile Include="v1\Entities\DataSheetEntity.cs" />
+    <Compile Include="v1\Objects\Responses\RegisterUserResponse.cs" />
+    <Compile Include="v1\Objects\Responses\Common\GenericResponse.cs" />
+    <Compile Include="v1\Objects\Responses\IncomeRangesResponse.cs" />
+    <Compile Include="v1\Objects\Responses\RenewTokenResponse.cs" />
+    <Compile Include="v1\Objects\Responses\RolesResponse.cs" />
+    <Compile Include="v1\Objects\Responses\SingleUserResponse.cs" />
+    <Compile Include="v1\Objects\Responses\StatesResponse.cs" />
+    <Compile Include="v1\Objects\Responses\TokenValidationResponse.cs" />
+    <Compile Include="v1\Objects\Responses\VerifyUserResponse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Templates.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Templates.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="v1\Objects\Responses\Dipn\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

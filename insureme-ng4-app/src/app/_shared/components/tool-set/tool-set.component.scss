@@ -1,0 +1,17 @@
+:host {
+	display: block;
+	height: 100%;
+	.tool-set {
+		height: 100%;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		.tool {
+			margin-left: 20px;
+			cursor: pointer;
+			&:first-of-type {
+				margin-left: 0;
+			}
+		}
+	}
+}

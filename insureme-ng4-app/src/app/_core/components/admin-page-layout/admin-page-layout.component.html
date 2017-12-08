@@ -1,0 +1,31 @@
+<div class="admin-page-layout">
+	<div class="left-side bmd-card">
+		<div class="logo">
+			{{title}}
+		</div>
+		<div class="heading"></div>
+		<div class="navigation">
+			<navigation [data]="navigation"></navigation>
+		</div>
+	</div>
+	<div class="main">
+		<div class="back">
+			<div class="red-top"></div>
+		</div>
+		<div class="front">
+			<div class="toolbar">
+				<tool-set [tools]="toolSet1Tools" (toolClickHandler)="handleToolClick($event)"></tool-set>
+				<tool-set [tools]="toolSet2Tools" (toolClickHandler)="handleToolClick($event)"></tool-set>
+			</div>
+			<div class="header bmd-bottom-edge">
+				<h4>Welcome</h4>
+				<breadcrumb [data]="breadcrumb"></breadcrumb>
+			</div>
+			<div class="content bmd-card">
+				<ng-content></ng-content>
+			</div>
+		</div>
+	</div>
+	<div class="right-side"></div>
+</div>
+

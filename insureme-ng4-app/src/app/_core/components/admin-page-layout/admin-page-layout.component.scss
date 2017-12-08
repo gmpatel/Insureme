@@ -1,0 +1,199 @@
+@import "../../../../styles/admin-style";
+@import "~wfk-roboto/roboto";
+
+:host {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	color: white;
+
+	.admin-page-layout {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		overflow-y: auto;
+		background-color: whitesmoke;
+
+		.left-side {
+			z-index: 10;
+			position: fixed;
+			left: 0;
+			width: $left-side-width;
+			top: 0;
+			bottom: 0;
+			background-color: white;
+
+			.logo {
+				height: $toolbar-height;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				flex-direction: row;
+				flex-wrap: wrap;
+				font-size: 2rem;
+			}
+			.heading {
+				height: $header-height;
+			}
+		}
+
+		.main {
+			z-index: 1;
+			position: fixed;
+			left: $left-side-width;
+			top: 0;
+			overflow-y: auto;
+			right: 0;
+			bottom: 0;
+
+			.back {
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 2;
+
+				.red-top {
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					height: $toolbar-height + $header-height;
+				}
+			}
+
+			.front {
+				z-index: 3;
+				position: absolute;
+				top: 0;
+				left: 50px;
+				right: 50px;
+				margin-bottom: 50px;
+
+				.toolbar {
+					position: fixed;
+					padding-left: 60px;
+					padding-right: 60px;
+					left: $left-side-width;
+					right: 10px;
+					height: $toolbar-height;
+					display: flex;
+					flex-flow: row wrap;
+					justify-content: space-between;
+					align-items: center;
+					ul.set {
+						display: flex;
+						align-items: center;
+						margin-bottom: 0;
+						li.set-item {
+							margin-right: 20px;
+							cursor: pointer;
+							&:last-of-type {
+								margin-right: 0;
+							}
+						}
+					}
+				}
+
+				.header {
+					position: fixed;
+					left: $left-side-width;
+					right: 0px;
+					top: $toolbar-height;
+					padding-left: 60px;
+					padding-right: 60px;
+					font-family: $roboto-thin;
+					h4 {
+						font-size: 1.8rem;
+						margin-top: 10px;
+						margin-bottom: 3px;
+					}
+
+					h5 {
+						font-size: 1rem;
+						margin-top: 0;
+					}
+				}
+
+				.content {
+					padding: $toolbar-height + $header-height - 70px 50px 50px;
+					background-color: white;
+				}
+			}
+		}
+
+		.right {
+			position: fixed;
+			top: 0;
+			right: $right-side-width * -1;
+			bottom: 0;
+			width: $right-side-width;
+			background-color: white;
+		}
+	}
+
+	&.admin {
+		.logo {
+			background-color: $primary;
+		}
+		.heading {
+			background-color: $primary;
+		}
+		.red-top {
+			background-color: $primary;
+		}
+
+		.toolbar {
+			background-color: $primary;
+		}
+
+		.header {
+			background-color: $primary;
+		}
+	}
+
+	&.client {
+		color: #333333;
+		.logo {
+			background-color: $warning;
+		}
+		.heading {
+			background-color: $warning;
+		}
+		.red-top {
+			background-color: $warning;
+		}
+
+		.toolbar {
+			background-color: $warning;
+		}
+
+		.header {
+			background-color: $warning;
+		}
+	}
+
+	&.user {
+		.logo {
+			background-color: $info;
+		}
+		.heading {
+			background-color: $info;
+		}
+		.red-top {
+			background-color: $info;
+		}
+
+		.toolbar {
+			background-color: $info;
+		}
+
+		.header {
+			background-color: $info;
+		}
+	}
+}

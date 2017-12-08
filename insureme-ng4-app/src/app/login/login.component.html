@@ -1,0 +1,35 @@
+<div class="container-fluid">
+	<div class="row">
+		<div materialize class="s12 col main">
+			<form class="sign-in bmd-card" (submit)="loginUser()">
+				<h3>Sign in to InsureMe !!</h3>
+				<p class="msg">
+					Please enter your email address and password to login
+				</p>
+				<mtz-input placeholder="Email"
+						   type="email"
+						   required="true"
+						   name="email"
+						   [(ngModel)]="user.email"
+						   [error]="errors.email">
+				</mtz-input>
+				<mtz-input placeholder="Password"
+						   type="password"
+						   required="true"
+						   name="password"
+						   [(ngModel)]="user.password"
+						   [error]="errors.password">
+				</mtz-input>
+				<div class="input-field">
+					<input type="checkbox" id="test5" />
+					<label for="test5">Keep me logged in</label>
+				</div>
+				<div class="submit">
+					<button class="btn waves-effect waves-light" type="submit" [disabled]="!enableSubmit()">Sign in</button>
+					<p class="sign-up-link">Don't have an account? <a routerLink="/sign-up" routerLinkActive="active">Sign up here</a></p>
+					<p class="copyright">&copy; Copyright 2016 | InsureMe Pty. Ltd.</p>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

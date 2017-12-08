@@ -1,0 +1,56 @@
+<div class="container-fluid">
+	<div class="row">
+		<div materialize class="main s12 col">
+			<form class="register bmd-card" (submit)="registerUser()">
+				<h3>Sign Up with InsureMe !!</h3>
+				<mtz-input placeholder="First Name"
+						   required="true"
+						   name="firstName"
+						   hint="First name is required"
+						   [(ngModel)]="user.firstName"
+						   (validate)="validate('firstName', $event)"
+						   [error]="errors.firstName">
+				</mtz-input>
+				<mtz-input placeholder="Last Name"
+						   required="true"
+						   name="lastName"
+						   hint="Last name is required"
+						   [(ngModel)]="user.lastName"
+						   [error]="errors.lastName">
+				</mtz-input>
+				<mtz-input placeholder="Email"
+						   type="email"
+						   required="true"
+						   name="email"
+						   hint="Verification email will be sent on it"
+						   [(ngModel)]="user.email"
+						   (validate)="validate('email', $event)"
+						   [error]="errors.email">
+				</mtz-input>
+				<mtz-input placeholder="Password"
+						   type="password"
+						   required="true"
+						   name="password"
+						   hint="Please select complex password"
+						   [(ngModel)]="user.password"
+						   [error]="errors.password">
+				</mtz-input>
+				<mtz-input placeholder="Verify Passwrod"
+						   type="password"
+						   required="true"
+						   name="password2"
+						   [(ngModel)]="password2"
+						   (validate)="validate('password2', $event)"
+						   [error]="errors.password2">
+				</mtz-input>
+				<div class="submit">
+					<button class="btn waves-effect waves-light" type="submit" [disabled]="!enableSubmit()">Sign up</button>
+					<p class="sign-in-link">Already have an account?
+						<a routerLink="/login" routerLinkActive="active">Sign in here</a>
+					</p>
+					<p class="copyright">&copy; Copyright 2016 | InsureMe Pty. Ltd.</p>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

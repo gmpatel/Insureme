@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insureme.WebApis", "Insureme.WebApis\Insureme.WebApis.csproj", "{8E033D0B-E478-4E8E-AD77-E9AF5FA5505B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insureme.DataAccess", "Insureme.DataAccess\Insureme.DataAccess.csproj", "{199F0B16-13F8-402A-AB39-9A6C68546AF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insureme.Configuration", "Insureme.Configuration\Insureme.Configuration.csproj", "{3E7F352A-6B5B-4253-B69B-3A08E3984D8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insureme.Core", "Insureme.Core\Insureme.Core.csproj", "{B71B0030-115A-4769-AB6E-0275D1CEAD5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E033D0B-E478-4E8E-AD77-E9AF5FA5505B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E033D0B-E478-4E8E-AD77-E9AF5FA5505B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E033D0B-E478-4E8E-AD77-E9AF5FA5505B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E033D0B-E478-4E8E-AD77-E9AF5FA5505B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{199F0B16-13F8-402A-AB39-9A6C68546AF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{199F0B16-13F8-402A-AB39-9A6C68546AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{199F0B16-13F8-402A-AB39-9A6C68546AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{199F0B16-13F8-402A-AB39-9A6C68546AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E7F352A-6B5B-4253-B69B-3A08E3984D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E7F352A-6B5B-4253-B69B-3A08E3984D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E7F352A-6B5B-4253-B69B-3A08E3984D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E7F352A-6B5B-4253-B69B-3A08E3984D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B71B0030-115A-4769-AB6E-0275D1CEAD5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B71B0030-115A-4769-AB6E-0275D1CEAD5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B71B0030-115A-4769-AB6E-0275D1CEAD5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B71B0030-115A-4769-AB6E-0275D1CEAD5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://gmpatel.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Insureme.WebApis\\Insureme.WebApis.csproj
+		SccProjectName1 = Insureme.WebApis
+		SccLocalPath1 = Insureme.WebApis
+		SccProjectUniqueName2 = Insureme.DataAccess\\Insureme.DataAccess.csproj
+		SccProjectName2 = Insureme.DataAccess
+		SccLocalPath2 = Insureme.DataAccess
+		SccProjectUniqueName3 = Insureme.Configuration\\Insureme.Configuration.csproj
+		SccProjectName3 = Insureme.Configuration
+		SccLocalPath3 = Insureme.Configuration
+		SccProjectUniqueName4 = Insureme.Core\\Insureme.Core.csproj
+		SccProjectName4 = Insureme.Core
+		SccLocalPath4 = Insureme.Core
+	EndGlobalSection
+EndGlobal

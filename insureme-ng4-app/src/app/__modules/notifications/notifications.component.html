@@ -1,0 +1,3 @@
+<div class="notifications">
+	<notification [@flyInOut]="'in'" (timeUp)="deteleNotification($event)" [data]="notification" *ngFor="let notification of notificationsStack"></notification>
+</div>

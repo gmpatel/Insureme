@@ -1,0 +1,21 @@
+:host {
+	display: block;
+	ul.breadcrumb {
+		color: inherit;
+		background-color: transparent;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		font-size: 1rem !important;
+		li {
+			display: flex;
+			margin-right: 10px;
+			span {
+				margin-left: 10px;
+			}
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+<div class="input-field">
+	<input type="text"
+		   name="value"
+		   [type]="type"
+		   class="validate"
+		   [class.invalid]="inputInvalid" [(ngModel)]="_value"
+		   (blur)="onBlur()" (focus)="onFocus()">
+	<label>{{modPlaceHolder}}</label>
+	<div class="annotation clearfix">
+		<span *ngIf="error" class="error pull-left">{{error}}</span>
+		<!--<span class="pull-left">{{_value}}</span>-->
+		<span *ngIf="hint" class="hint pull-right">{{hint}}</span>
+	</div>
+</div>

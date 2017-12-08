@@ -1,0 +1,29 @@
+[
+	{
+		"displayAs": "Home",
+		"url": "/admin",
+		"icon": ""
+	},
+	{
+		"displayAs": "Users",
+		"url": "/admin/users",
+		"icon": "",
+		"subNav": [
+			{
+				"displayAs": "Add User",
+				"url": "/admin/users",
+				"icon": ""
+			},
+			{
+				"displayAs": "List Users",
+				"url": "/admin/users/all",
+				"icon": ""
+			}
+		]
+	},
+	{
+		"displayAs": "Policy Management",
+		"url": "/admin/policies",
+		"icon": ""
+	}
+]

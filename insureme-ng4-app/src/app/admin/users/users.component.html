@@ -1,0 +1,7 @@
+<h3>Users</h3>
+<button (click)="notify()">check notification</button>
+<ul>
+	<li *ngFor="let user of users">
+		<pre>{{user | json}}</pre>
+	</li>
+</ul>

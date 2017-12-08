@@ -1,0 +1,5 @@
+<ul class="breadcrumb">
+	<li *ngFor="let str of data; let i = index">
+		{{str}} <span *ngIf="i < data.length - 1">//</span>
+	</li>
+</ul>

@@ -1,0 +1,16 @@
+<div class="alert-box" [class.show]="show">
+	<div class="heading">
+		<div class="title">
+			<h2>{{title}}</h2>
+		</div>
+		<div class="btn-close"></div>
+	</div>
+	<div class="content">
+		<p [innerHtml]="msg"></p>
+	</div>
+
+	<div class="action-panel clearfix pull-right">
+		<button class="red" (click)="cancelClicked()">Cancel</button>
+		<button class="blue" (click)="okClicked()">Ok</button>
+	</div>
+</div>

@@ -1,0 +1,62 @@
+@import "../../../../styles/admin-style";
+
+:host {
+	display: block;
+	cursor: pointer;
+
+	* {
+		transition: all 0.3s ease-in-out;
+	}
+
+	.nav-item {
+
+		.display-as {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 20px;
+			height: 42px;
+			color: black;
+
+			.fa-chevron-down {
+				transform: rotate(-90deg);
+			}
+
+			&:hover {
+				background-color: $primary;
+				color: white;
+			}
+		}
+
+		.sub-nav {
+			overflow: hidden;
+			navigation-item {
+				opacity: 1;
+				transform: translate(0, 0);
+			}
+
+			/deep/ .display-as {
+				transition: all 0.2s ease-in-out;
+				padding-left: 40px;
+				opacity: 0;
+				height: 0;
+			}
+		}
+
+		&.open {
+			.display-as {
+				.fa-chevron-down {
+					transform: rotate(0deg);
+				}
+			}
+
+			.sub-nav {
+				/deep/ .display-as {
+					opacity: 1;
+					height: 42px;
+				}
+			}
+		}
+	}
+}

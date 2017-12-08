@@ -1,0 +1,9 @@
+<div class="nav-item" [class.open]="open">
+	<div class="display-as" (click)="navItemClicked()">
+		{{data.displayAs}}
+		<i class="fa fa-chevron-down" *ngIf="data.subNav" aria-hidden="true"></i>
+	</div>
+	<div class="sub-nav" *ngIf="data.subNav">
+		<navigation-item [data]="subNavItem" *ngFor="let subNavItem of data.subNav"></navigation-item>
+	</div>
+</div>

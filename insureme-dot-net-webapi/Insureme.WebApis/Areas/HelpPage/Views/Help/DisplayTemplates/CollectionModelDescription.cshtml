@@ -1,0 +1,6 @@
+@using Insureme.WebApis.Areas.HelpPage.ModelDescriptions
+@model Insureme.WebApis.Areas.HelpPage.ModelDescriptions.CollectionModelDescription
+@if (Model.ElementDescription is ComplexTypeModelDescription)
+{
+    @Html.DisplayFor(m => m.ElementDescription)
+}
